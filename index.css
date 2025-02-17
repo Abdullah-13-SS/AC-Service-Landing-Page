@@ -1,0 +1,574 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    color: blue;
+    margin: 0px;
+    padding: 50px 0px 25px;
+}
+
+/* navbar */
+.navbar{
+    position: fixed!important;
+    z-index: 1;
+    /* margin: 0px 10px 0px 15px; */
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px!important;
+    box-shadow: 2px 2px 2px black;
+}
+.navbar .container-fluid a img{
+    height: 50px;
+    margin-left: 25px;
+}
+.navbar .collapse a:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* home */
+.home .card-img{
+    filter: brightness(75%);
+    height: 720px;
+}
+.home h5{
+    margin: 200px 500px 50px 50px;
+    font-size: 70px;
+    color: deeppink;
+    text-shadow: 2px 2px 2px white;
+}
+.home p{
+    margin: 0px 500px 0px 50px;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+.home .btn{
+    padding: 10px 25px!important;
+    margin: 50px 0px 0px 50px;
+    background-color: red!important;
+    color: white!important;
+    font-weight: 600!important;
+    /* border: 2px solid deeppink!important; */
+    border-radius: 15px!important;
+}
+.home .btn:hover{
+    background-color: white!important;
+    color: red!important;
+    border: 3px solid red!important;
+}
+.h-img{
+    animation-name: h-i;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes h-i {
+    20%{
+        content: url("https://html.laralink.com/arkdin/assets/img/faq_img_1.jpg");
+    }
+    40%{
+        content: url("https://html.laralink.com/arkdin/assets/img/post_3.jpg");
+    }
+    60%{
+        content: url("https://html.laralink.com/arkdin/assets/img/post_1.jpg");
+    }
+    80%{
+        content: url("https://html.laralink.com/arkdin/assets/img/faq_img_2.jpg");
+    }
+    
+}
+
+/* about */
+.about{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+    padding: 50px;
+}
+/* .about section{
+    margin: 0px 0px 0px 0px;
+} */
+.about section h2{
+    color: green;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.about section p{
+    margin: 0px 0px 20px 0px;
+    padding-right: 0px;
+    font-size: 20px;
+}
+.about section button{
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+}
+.about section button:hover{
+    background-color: green;
+    color: white;
+}
+.about img{
+    animation-name: abt-img;
+    animation-duration: 3s;
+}
+.about section{
+    animation-name: abt-sec;
+    animation-duration: 3s;
+}
+@keyframes abt-img {
+    0%{
+        transform: translateX(-100%);
+    }
+    /* 50%{
+        content: url("https://html.laralink.com/arkdin/assets/img/post_3.jpg");
+    } */
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+@keyframes abt-sec {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+
+/* service */
+.service{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    text-align: center;
+    padding: 50px;
+}
+.service div{
+    background-color: lightgray;
+    border-radius: 15px;
+}
+.service div:hover{
+    transition: all 3s;
+    transform: scale(1.1);
+    border: 2px solid magenta;
+}
+.service img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.service h4{
+    color: magenta;
+    font-weight: 700;
+}
+.service p{
+    margin: 25px 0px 25px;
+    padding: 0px 50px;
+}
+.service button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    background-color: white;
+    color: magenta;
+    border: 2px solid magenta;
+}
+.service button:hover{
+    background-color: magenta;
+    color: white;
+}
+.s1,.s5,.s3{
+    animation-name: se;
+    animation-duration: 3s;
+}
+.s4,.s2,.s6{
+    animation-name: se1;
+    animation-duration: 3s;
+}
+@keyframes se {
+    0%{
+        transform: translateY(100%);
+        overflow: hidden;
+        translateY: hidden;
+    }
+    100%{
+        transform: translateY(0%);
+        overflow: hidden;
+        translateY: hidden;
+    }
+    
+}
+@keyframes se1 {
+    0%{
+        transform: translateY(-100%);
+        overflow: hidden;
+        translateY: hidden;
+    }
+    100%{
+        transform: translateY(0%);
+        overflow: hidden;
+        translateY: hidden;
+    }
+    
+}
+
+/* review */
+.review{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    padding: 50px;
+}
+.review section{
+    background-color: lightgoldenrodyellow;
+    padding: 25px;
+    border-radius: 15px;
+}
+.review section i{
+    font-size: 50px;
+    color: red;
+}
+.review section p{
+    margin: 10px 0px 25px;
+}
+.review section img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.review section h4{
+    margin: -52px 0px 0px 65px;
+    color: red;
+}
+
+/* team */
+.team{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    padding: 25px;
+}
+.r{
+    width: 100%;
+    background-color: lightcyan;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+}
+.r:hover{
+    transition: all 2s;
+    scale: 1.05;
+    border: 2px solid red;
+    background-color: lightpink;
+    h1,h6 i{
+        color: red;
+        transition: all 2s;
+    }
+}
+.r img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    /* border: 5px solid blue; */
+}
+/* .r p{
+    margin: 25px 0px 25px 0px;
+}
+.r h6 i{
+    color: navy;
+}
+.r h6{
+    margin-bottom: 35px;
+} */
+.r i{
+    margin-right: 20px;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+/* choose us */
+.choose{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    padding: 50px;
+}
+.choose .c{
+    background-color: lightyellow;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+}
+.choose .c h3{
+    margin: 25px 0px 20px;
+}
+.cs h1+p{
+    text-align: center;
+    padding: 0px 200px;
+    font-size: 25px;
+}
+
+/* contact */
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-bottom: 75px;
+    /* background-color: blanchedalmond; */
+}
+.contact h1{
+    margin: 50px 0px 0px;
+}
+.contact form{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 25px 0px 0px 50px;
+    /* box-shadow: 5px 5px 5px black; */
+}
+.contact form button{
+    /* padding: 10px 10px; */
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px 25px;
+    width: 40%;
+}
+.contact form button:hover{
+    background-color: red;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+form input{
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+form textarea{
+    margin: 0px 0px 25px 0px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: none;
+    resize: none;
+    background-color: black;
+    color: white;
+}
+.contact section{
+    margin: 100px 25px 0px 200px;
+}
+.contact section i{
+    margin: 0px 25px 0px 0px;
+}
+.contact section h3{
+    margin: 0px 0px 25px 0px;
+}
+
+/* media query */
+@media screen and (min-width:320px) and (max-width:606px) {
+    
+    .navbar .container-fluid a img{
+        /* height: 50px; */
+        margin-left: 10px;
+    }
+
+    .home h5{
+        font-size: 35px;
+        margin: 100px 40px 40px;
+    }
+    .home p{
+        margin: 0px 0px 0px 40px;
+        font-size: 25px;
+    }
+
+    .about{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .about img{
+        width: 300px;
+    }
+    .about section{
+        width: 300px;
+        padding-left: 10px;
+    }
+    .about section h2{
+        font-size: 30px;
+    }
+
+    .service{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .service div{
+        width: 300px;
+    }
+    .service h4{
+        padding: 0px 30px;
+    }
+
+    .review{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .review section{
+        width: 300px;
+    }
+    .review section i{
+        font-size: 30px;
+    }
+
+    .team{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .r{
+        width: 300px;
+    }
+
+    .choose{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .choose .c{
+        width: 300px;
+    }
+    .cs h1+p{
+        padding: unset;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .contact{
+        gap: 25px;
+    }
+    .contact form{
+        width: 270px;
+        margin: 0px 25px 25px 25px;
+    }
+    form textarea{
+        width: 100%;
+    }
+    .contact section{
+        margin: 0px 0px 0px 25px;
+    }
+    .contact form button{
+        width: 100%;
+    }
+    .contact section i{
+        font-size: 35px!important;
+    }
+
+}
+
+@media screen and (min-width:606px) and (max-width:768px) {
+    
+    .home h5{
+        font-size: 55px;
+        margin: 100px 100px 50px 40px;
+    }
+    .home p{
+        margin: 0px 50px 0px 40px;
+        font-size: 40px;
+    }
+
+    .about{
+        grid-template-columns: auto;
+        /* gap: 10px; */
+        padding: 10px;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about section{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .about section h2{
+        font-size: 50px;
+    }
+
+    .service{
+        grid-template-columns: auto auto;
+        padding: 20px;
+        gap: 25px;
+    }
+    .service div{
+        width: 350px;
+    }
+    .service h4{
+        padding: 0px 30px;
+    }
+
+    .review{
+        grid-template-columns: auto auto;
+        padding: 20px;
+        gap: 25px;
+    }
+    .review section{
+        width: 350px;
+    }
+    .review section i{
+        font-size: 30px;
+    }
+
+    .team{
+        grid-template-columns: auto auto;
+        padding: 20px;
+    }
+    .r{
+        width: 350px;
+    }
+
+    .choose{
+        grid-template-columns: auto auto;
+        padding: 20px;
+        gap: 25px;
+    }
+    .choose .c{
+        width: 350px;
+    }
+    .cs h1+p{
+        padding: unset;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .contact{
+        gap: 25px;
+    }
+    .contact form{
+        width: 290px;
+        margin: 0px 25px 25px 25px;
+    }
+    form textarea{
+        width: 100%;
+    }
+    .contact section{
+        margin: 70px 0px 0px 25px;
+    }
+    .contact form button{
+        width: 100%;
+    }
+    .contact section i{
+        font-size: 35px!important;
+    }
+
+}
